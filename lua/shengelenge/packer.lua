@@ -51,9 +51,6 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	use("mfussenegger/nvim-dap")
-	use({ "scalameta/nvim-metals", requires = { "nvim-lua/plenary.nvim" } })
-
 	use({
 		"nvim-tree/nvim-tree.lua",
 		requires = {
