@@ -11,7 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("shengelenge.lazy")
+require("lazy").setup({
+    spec = "shengelenge.lazy",
+    change_detection = { notify = false }
+})
     --[[
 	use({
 		"VonHeikemen/lsp-zero.nvim",
