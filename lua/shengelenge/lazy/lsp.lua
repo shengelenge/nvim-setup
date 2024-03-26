@@ -31,6 +31,7 @@ return {
 				"eslint",
 				"rust_analyzer",
 				"lua_ls",
+				"clangd",
 			},
 			handlers = {
 				function(server_name)
