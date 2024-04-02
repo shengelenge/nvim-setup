@@ -6,6 +6,7 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
+				cpp = { "clang_format" },
 				javascript = { { "prettierd", "prettier" } },
 				typescript = { { "prettierd", "prettier" } },
 				javascriptreact = { { "prettierd", "prettier" } },
@@ -18,7 +19,6 @@ return {
 				scss = { { "prettierd", "prettier" } },
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				c = { "clang-format" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
