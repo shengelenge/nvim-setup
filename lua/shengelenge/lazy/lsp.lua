@@ -27,7 +27,7 @@ return {
 		require("mason").setup()
 		require("mason-lspconfig").setup({
 			ensure_installed = {
-				"tsserver",
+				"ts_ls",
 				"eslint",
 				"rust_analyzer",
 				"lua_ls",
@@ -35,10 +35,6 @@ return {
 			},
 			handlers = {
 				function(server_name)
-					-- TEMPORARY FIX
-					if server_name == "tsserver" then
-						server_name = "ts_ls"
-					end
 					require("lspconfig")[server_name].setup({
 						capabilities = capabilities,
 						settings = {
