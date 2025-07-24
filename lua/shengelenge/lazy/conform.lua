@@ -9,6 +9,7 @@ return {
 			formatters_by_ft = {
 				cpp = { "clang_format" },
 				lua = { "stylua" },
+				python = { "black", "isort" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
